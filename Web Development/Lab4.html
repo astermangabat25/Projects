@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            .container {
+              width: auto;
+              display:grid;
+              grid-template-columns:repeat(5, 80px);
+              grid-gap:10px;
+            }
+            img{
+              filter:saturate(90%) sepia(100%);
+            }
+            .one {
+              clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+              shape-outside: polygon(50% 0%, 0% 100%, 100% 100%);
+            }
+
+            .two {
+              clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+              shape-outside: polygon(50% 100%, 0% 0%, 100% 0%);
+            }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        <img src="https://picsum.photos/150" alt="" class="one">
+        <img src="https://picsum.photos/150" alt="" class="two">
+        <img src="https://picsum.photos/150" alt="" class="one">
+        <img src="https://picsum.photos/150" alt="" class="two">
+        <img src="https://picsum.photos/150" alt="" class="one">
+        <img src="https://picsum.photos/150" alt="" class="two">
+        <img src="https://picsum.photos/150" alt="" class="one">
+        <img src="https://picsum.photos/150" alt="" class="two">
+        <img src="https://picsum.photos/150" alt="" class="one">
+        <img src="https://picsum.photos/150" alt="" class="two">
+      </div>
+    </body>
+</html>

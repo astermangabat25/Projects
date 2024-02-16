@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lab5</title>
+        <style>
+            .container{
+                width: auto;
+                display:grid;
+                grid-template-columns:repeat(4, 90px);
+                grid-template-rows: repeat(2, 150px);
+                grid-gap:0px;
+                }
+            .imgone{
+                clip-path: polygon(0 0, 55% 0, 100% 100%, 45% 100%);
+            }
+            .imgtwo{
+                clip-path: polygon(45% 0, 100% 0%, 55% 99%, 0% 100%);
+            }
+            .textone{
+                writing-mode: vertical-lr;
+                transform: translate(27px, -140px) rotate(-24deg);
+            }
+            .texttwo{
+                writing-mode: vertical-lr;
+                transform: translate(27px, -133px) rotate(25deg);
+            }
+            p{
+                font-size:40px;
+            }
+            section{
+                margin-bottom:100px;
+            }
+
+            .Acontainer{
+                display: grid;
+                grid-template-columns: repeat(4, 150px);
+                grid-template-rows: repeat(2, 150px);
+            }
+            .pic{
+                clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+            }
+            .Acontainer p{
+                font-size: 25px;
+            }
+            .Acontainer .cont1 p{
+                transform: translate(42px,-177px);
+            }
+            .Acontainer .cont2 p{
+                transform: translate(71px,-128px) rotate(46deg);
+            }
+            .Acontainer .cont3 p{
+                writing-mode: vertical-lr;
+                text-orientation: upright;
+                transform: translate(80px, -127px);
+            }
+            .Acontainer .cont4 p{
+                transform: translate(68px, -106px) rotate(-45deg);
+            }
+
+            .Acontainer .cont5 p{
+                transform: translate(-8px, -190px) rotate(-45deg);
+            }
+
+            .Acontainer .cont6 p{
+                writing-mode: vertical-lr;
+                text-orientation: upright;
+                transform: translate(-8px, -127px);
+            }
+            .Acontainer .cont7 p{
+                transform: translate(-13px,-44px) rotate(46deg);
+            }
+            .Acontainer .cont8 p{
+                transform: translate(42px,-56px);
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="container">
+              <div class="one">
+                <img src="https://picsum.photos/150" alt="" class="imgone">
+                <p class="textone">MOVE</p>
+              </div>
+              <div class="one">
+                <img src="https://picsum.photos/150" alt="" class="imgone">
+                <p class="textone">MOVE</p>
+              </div>
+              <div class="one">
+                <img src="https://picsum.photos/150" alt="" class="imgone">
+                <p class="textone">MOVE</p>
+              </div>
+              <div class="one">
+                <img src="https://picsum.photos/150" alt="" class="imgone">
+                <p class="textone">MOVE</p>
+              </div>
+          
+              <div class="two">
+                <img src="https://picsum.photos/150" alt="" class="imgtwo">
+                <p class="texttwo">MOVE</p>
+              </div>
+              <div class="two">
+                <img src="https://picsum.photos/150" alt="" class="imgtwo">
+                <p class="texttwo">MOVE</p>
+              </div>
+              <div class="two">
+                <img src="https://picsum.photos/150" alt="" class="imgtwo">
+                <p class="texttwo">MOVE</p>
+              </div>
+              <div class="two">
+                <img src="https://picsum.photos/150" alt="" class="imgtwo">
+                <p class="texttwo">MOVE</p>
+              </div>
+            </div>
+          </section>
+          
+          <section>
+            <div class="Acontainer">
+              <div class="cont1">
+                <img src="https://picsum.photos/150" alt="" class="pic">
+                <p>TEXT</p>
+              </div>
+              <div class="cont2">
+                <img src="https://picsum.photos/150" alt="" class="pic">
+                <p>TEXT</p>
+              </div>
+              <div class="cont3">
+                <img src="https://picsum.photos/150" alt="" class="pic">
+                <p>TEXT</p>
+              </div>
+              <div class="cont4">
+                <img src="https://picsum.photos/150" alt="" class="pic">
+                <p>TEXT</p>
+              </div>
+          
+              <div class="cont5">
+                <img src="https://picsum.photos/150" alt="" class="pic">
+                <p>TEXT</p>
+              </div>
+              <div class="cont6">
+                <img src="https://picsum.photos/150" alt="" class="pic">
+                <p>TEXT</p>
+              </div>
+              <div class="cont7">
+                <img src="https://picsum.photos/150" alt="" class="pic">
+                <p>TEXT</p>
+              </div>
+              <div class="cont8">
+                <img src="https://picsum.photos/150" alt="" class="pic">
+                <p>TEXT</p>
+              </div>
+            </div>
+          </section>
+    </body>
+</html>

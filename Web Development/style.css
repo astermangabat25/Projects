@@ -1,0 +1,173 @@
+html, body {
+  height: 100%;
+  margin:0;
+  padding:0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+}
+.container{
+  display:grid;
+  width:98vw;
+  height: 98vh;
+  justify-content: center;
+  align-content: center;
+  grid-gap: 4px;
+  grid-template-columns: repeat(3, 118px);
+  grid-template-rows: repeat(5, 63px);
+  grid-gap: 4px;
+  grid-template-areas: 
+    '. a .'
+    'b . c'
+    '. d .'
+    'e . f'
+    '. g .';
+}
+.container a{
+  width: 150px;
+  height: 130.433px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+img{
+  width: 150px;
+  aspect-ratio: 1.15/1;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+.one{
+  grid-area: a;
+}
+.two{
+  grid-area: b;
+}
+.three{
+  grid-area: c;
+}
+.four{
+  grid-area: d;
+}
+.five{
+  grid-area: e;
+  z-index: 1;
+}
+.six{
+  grid-area: f;
+}
+.seven{
+  grid-area: g;
+}
+a:not(.middle):hover{
+  z-index:9;
+  clip-path: none;
+}
+img:not(.middle):hover{
+  z-index: 9;
+  filter: grayscale(0%);
+  transform: scale(1.15);
+  transition: all 0.3s ease-in;
+}
+.middle{
+  overflow:hidden;
+}
+.middle:hover{
+  z-index: 9;
+  clip-path: none;
+  transform:scale(2.7, 1);  
+  transition: transform 0.3s ease-in;
+}
+.middle img:hover{
+  clip-path:none;
+  filter: grayscale(0%);
+  transform: scale(1, 2.7);
+  transition: transform 0.3s ease-in;
+}
+
+section{
+  transform: translateY(50vh);
+  padding:25px;
+}
+#first{
+  border: 1px solid black;
+  background-color: #FFA07A;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr, 2fr, 1fr);
+  grid-template-areas:'a b b c'
+    'a b b c';
+  grid-gap: 20px;
+}
+#first p, #first h1, #first h2, #first h3, #first a{
+  color: #2F4F4F;
+}
+#first a{
+  height: 25px;
+}
+.header{
+  grid-area: a;
+  justify-self: center;
+  align-self: center;
+}
+.excerpt{
+  grid-area: c;
+  writing-mode: vertical-lr;
+}
+.content{
+  grid-area: b;
+}
+#second{
+  background-color: #E6E6FA;
+}
+#second h1, #second p, #second a{
+  color: #191970;
+}
+#third{
+  background-color: #F5F5DC;
+}
+#third h1, #third p, #third h2, #third aside, #third a{
+  color: #006400;
+}
+#third article{
+	padding: 1em;
+	column-count: 3;
+}
+#third aside{
+  font-weight: bold;
+  font-style: italic;
+}
+#fourth{
+  background-color: #B0E0E6;
+}
+#fourth h1, #fourth p, #fourth a{
+  color: #000080;
+}
+#fifth{
+  background-color: #FFDAB9;
+}
+#fifth h2, #fifth blockquote, #fifth a{
+  color: #4B0082;
+}
+#sixth{
+  background-color: #98FB98;
+}
+#sixth h1, #sixth blockquote, #sixth a, #sixth h3{
+  color: #5C4033;
+}
+#seventh{
+  background-color: #87CEFA;
+}
+#seventh blockquote{
+  font-weight: bold;
+  font-style: italic;
+}
+#seventh a, #seventh h1, #seventh p, #seventh blockquote{
+  color: #483D8B;
+}
