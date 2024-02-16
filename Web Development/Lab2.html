@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <style>
+            div{
+                display:flex;
+            }
+            .container {
+                padding: 0;
+                flex-wrap:wrap;
+                border: 1px solid black;
+                justify-content: space-evenly;
+            }
+
+            .col {
+                border: 1px solid black;
+                border-radius: 10px;
+                width:250px;
+                margin: 5px;
+                flex-direction: column;
+                flex-grow:1;
+                flex-basis:auto;
+            }
+
+            .text {
+                flex-direction: column;
+                align-items: baseline;
+                padding:16px;
+                flex-grow: 1;
+            }
+
+
+            .text .btn {
+                margin-top: auto;
+            }
+            img {
+                width: 100%;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>Same Column Height</h1>
+            <div class="container">
+              <div class="col">        
+                <a href="#">
+                  <img src="https://placehold.co/600x400" alt="Some sample words">
+                </a>
+                <div class="text">
+                  <h2>A little title</h2>
+                   <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sequi eligendi dicta ab quia minima iure consectetur 
+                    ullam at deserunt mollitia, accusantium quos. Excepturi 
+                    cupiditate unde corporis quo dolorum ea veniam.
+                  </p>
+                  <a class="btn" href="#">Read more</a>
+                </div>
+              </div>
+              <div class="col">        
+                <a href="#">
+                  <img src="https://placehold.co/600x400" alt="Some sample words">
+                </a>
+                <div class="text">
+                  <h2>A little title</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sequi eligendi dicta ab quia minima
+                  </p>
+                  <a class="btn" href="#">Read more</a>
+                </div>
+              </div>
+              <div class="col">        
+                <a href="#">
+                  <img src="https://placehold.co/600x400" alt="Some sample words">
+                </a>
+                <div class="text">
+                  <h2>A little title</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <a class="btn" href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+          </section>
+    </body>
+</html>
