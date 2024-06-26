@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <style>
+            #login{
+                display:none;
+            }
+        </style>
+        {% block styles %}{% endblock %}
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <h1>Recipe Book</h1>
+                <h2>You are viewing: {% block page_title %}{% endblock %}</h2>
+            </header>
+            <div id="{% block page_type %}{% endblock %}">
+                {% if request.user.is_authenticated %}
+                    <form method="post" action="{% url 'logout' %}">
+                        {% csrf_token %}
+                        <button type="submit">Log Out</button>
+                    </form>
+                {% else %}
+                    <a href="{% url 'login' %}">Log In</a>
+                {% endif %}
+            </div>    
+            {% block content %}{% endblock %}
+        </div>
+        {% block scripts %}{% endblock %}
+    </body>
+</html>

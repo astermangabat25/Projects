@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Recipe Book{% endblock %}
+{% block page_title %}Recipe List{% endblock %}
+{% block content %}
+<form action=""></form>
+<ul>
+    {% for recipes in recipes %}
+    <li>
+        <a href="{{recipes.get_absolute_url}}">
+            {{recipes}}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+<a href="/recipe/add">Create a new recipe!</a>
+{% endblock %}
