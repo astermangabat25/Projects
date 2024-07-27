@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Add Recipe Image{% endblock %}
+{% block page_title %}Add Recipe Image{% endblock %}
+{% block content %}
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+    <button>Submit</button>
+</form>
+<a href="{% url 'ledger:recipe' recipe_pk %}">Cancel</a>
+{% endblock %}
