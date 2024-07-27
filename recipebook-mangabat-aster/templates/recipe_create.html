@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Recipe Creation{% endblock %}
+{% block page_title %}Recipe Creation Page{% endblock %}
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <button>Submit</button>
+</form>
+<a href="/recipes/list">Recipe List</a>
+{% endblock %}
