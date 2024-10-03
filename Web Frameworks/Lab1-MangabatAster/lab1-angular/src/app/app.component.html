@@ -1,0 +1,71 @@
+<div class="flex items-center justify-center min-h-screen">
+    <form class="w-full max-w-md p-8 rounded-lg border border-black">
+      <h1 class="text-3xl font-extrabold text-center mb-6">Form</h1>
+      <p class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-1" htmlFor="email">
+          Email:
+        </label>
+        <input
+          type="email"
+          id="email"
+          [(ngModel)]="email"
+          name="email"
+          placeholder="Enter email here"
+          class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-blue-700"
+          required />
+      </p>
+      {{email}}
+    
+      <p>
+        <label class="block text-gray-700 text-sm font-bold mb-1" htmlFor="first_name">
+          First Name:
+        </label>
+        <input 
+          type="text" 
+          placeholder="Enter your first name here" 
+          [(ngModel)]="firstName"
+          name="firstName"
+          class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-blue-700"
+          required/>
+      </p>
+      {{firstName}}
+    
+      <p>
+        <label class="block text-gray-700 text-sm font-bold mb-1" htmlFor="last_name">
+          Last Name:
+        </label>
+        <input 
+          type="text" 
+          placeholder="Enter your last name here" 
+          [(ngModel)]="lastName"
+          name="lastName"
+          class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-blue-700"
+          required/>
+      </p>
+      {{lastName}}
+    
+      <p>
+        <label class="block text-gray-700 text-sm font-bold mb-1" htmlFor="phone_number">
+          PhoneNumber:
+        </label>
+        <input 
+          type="text" 
+          placeholder="09xx-xxx-xxxx" 
+          [(ngModel)]="phoneNumber"
+          name="phoneNumber"
+          class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-blue-700"
+          required/>
+      </p>
+      {{phoneNumber}}
+      <br>
+      {{errorMessage}}
+      <br>
+    
+      <button 
+        type="submit"
+        (click)="submitForm()"
+        class="w-full bg-blue-500 text-white font-bold py-2 rounded hover:bg-blue-600 transition duration-200">
+        Submit</button>
+    </form>
+  </div>
+    
